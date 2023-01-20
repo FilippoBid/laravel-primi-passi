@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
-});
+
+    $users= ["gianni","roberto","carmelino","ugo","dino","calogero",];
+
+
+
+
+
+
+    return view('homepage',[
+        "users"=>$users
+    ]);
+})->name("homepage");

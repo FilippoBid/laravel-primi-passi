@@ -16,8 +16,13 @@ Pagina iniziale
 </head>
 <body>
     <div class="container">
-
         
+
+        <div class="card">
+            @foreach($users as $user) 
+                    <h5>{{$user}}</h5>
+            @endforeach
+        </div>
 
 
 
